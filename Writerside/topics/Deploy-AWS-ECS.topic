@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Deploy AWS ECS" id="Deploy-AWS-ECS">
+
+    <chapter title="Etapas do Deploy" id="processo_de_deploy_pec_code_ecs">
+
+        <chapter title="1. Subir Imagem de Contêiner para o ECR" id="subir_imagem_de_container_para_o_ecr">
+
+            <chapter title="1.1 Pré-requisitos" id="1_1_pre_requisitos">
+                <list>
+                    <li>Certifique-se de que a AWS CLI está instalada e configurada com as credenciais apropriadas.</li>
+                    <li>A imagem do contêiner deve estar pronta e testada localmente.</li>
+                </list>
+            </chapter>
+
+
+            <chapter title="1.2 Procedimento" id="1_2_procedimento">
+                - Execute `aws ecr get-login-password` para autenticar o Docker ao ECR.
+                - Utilize `docker tag` para marcar sua imagem local com o repositório ECR.
+                - Faça push da imagem para o ECR com o comando `docker push`.
+            </chapter>
+
+        </chapter>
+
+        <chapter title="2. Criar Definição de Tarefa" id="create_task_definition">
+            <chapter title="2.1 Pré-requisitos" id="pre-requisitos">
+                <list>
+                    <li>Decida sobre a configuração da tarefa, incluindo CPU, memória, variáveis de ambiente e configurações de
+                        rede.</li>
+                </list>
+            </chapter>
+
+
+            <chapter title="2.2 Procedimento" id="2_2_procedimentos">
+                <list>
+                    <li>No console da AWS ou através da AWS CLI, crie uma nova definição de tarefa.</li>
+                    <li>Insira os detalhes da imagem de contêiner do ECR e as especificações necessárias.</li>
+                    <li>Registre a definição de tarefa.</li>
+                </list>
+            </chapter>
+        </chapter>
+
+        <chapter title="3 Criar Cluster" id="criar_cluster">
+
+            ### 3.1 Pré-requisitos
+            - Defina o tipo de cluster que deseja criar, como Fargate ou EC2.
+
+            ### 3.2 Procedimento
+            - No console da AWS ou via AWS CLI, navegue até o serviço ECS e crie um novo cluster.
+            - Escolha as configurações do cluster e as opções de networking adequadas.
+
+        </chapter>
+
+        <chapter title="4 Criar Serviço" id="criar_servico">
+            ### 4.1 Pré-requisitos
+            - Tenha a definição de tarefa e o cluster preparados.
+
+            ### 4.2 Procedimento
+            - No console da AWS ou usando a AWS CLI, crie um novo serviço dentro do cluster ECS.
+            - Selecione a definição de tarefa criada anteriormente.
+            - Configure o número de desejos de tarefas, o balanceador de carga (se aplicável) e outras configurações de
+            serviço.
+            - Inicie o serviço.
+        </chapter>
+
+
+        ## Conclusão
+        <chapter title="Conclusão" id="subir_imagem_de_container_para_o_ecr_conclusao">
+            <p>
+                De forma resumida, estas são as etapas de deploy via ECS. A baixo, será resumido o que cada serviço da
+                aws faz, e também conterá um tutorial exemplificado de deploy.
+            </p>
+        </chapter>
+
+
+    </chapter>
+
+    <chapter title="Amazon Elastic Container Registry (ECR)" id="chapter-ecr">
+
+        <chapter title="Visão Geral" id="ecr-introduction">
+            <p>O ECR é um serviço de registro de contêineres que facilita para os desenvolvedores armazenar, gerenciar e
+                implantar
+                imagens de contêineres Docker. Ele está integrado com o Amazon Elastic Container Service (ECS),
+                simplificando o
+                desenvolvimento para produção de fluxos de trabalho de contêiner</p>
+            <p>
+                Utilizamos o ECR para o armazenamento das nossas imagens, que posteriormente serão utilizadas no deploy
+            </p>
+        </chapter>
+
+
+        <chapter title="Funcionalidades Principais" id="ecr-functionality">
+            <list>
+                <li><b>Armazenamento de Imagens</b>: Fornece um local seguro para armazenar e versionar suas imagens de
+                    contêiner.
+                </li>
+                <li><b>Integração com IAM</b>: Utiliza as políticas do IAM para fornecer controle de acesso granular às
+                    imagens de
+                    contêiner.
+                </li>
+                <li><b>Segurança</b>: As imagens são automaticamente escaneadas em busca de vulnerabilidades de
+                    segurança.
+                </li>
+                <li><b>Escalabilidade</b>: Gerenciamento sem a necessidade de operar sua própria infraestrutura de
+                    registro de
+                    contêineres.
+                </li>
+                <li><b>Replicação de Imagens</b>: Suporta a replicação de imagens entre regiões da AWS para um deploy
+                    global mais
+                    rápido e confiável.
+                </li>
+            </list>
+        </chapter>
+
+
+        <chapter title="Melhores Práticas" id="ecr-best-practice">
+            <list>
+                <li>Utilize nomes de repositório e tags significativos para organizar suas imagens de contêiner de forma
+                    eficiente.
+                </li>
+                <li>Configure políticas de retenção de imagem para manter o controle sobre o ciclo de vida das imagens
+                    armazenadas.
+                </li>
+                <li>Aproveite as políticas de IAM para restringir quem pode fazer push e pull de imagens para o seu
+                    repositório.
+                </li>
+                <li>Monitore a utilização do repositório e configure alarmes para notificações de atividades importantes
+                    ou
+                    anômalas.
+                </li>
+            </list>
+        </chapter>
+
+    </chapter>
+
+
+</topic>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="hi" name="Help Instance"
+                 start-page="">
+
+    <toc-element topic="Deploy.topic">
+        <toc-element topic="AWS.md">
+            <toc-element topic="Deploy-AWS-ECS.topic"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="peccode.topic">
+        <toc-element topic="integrations.topic">
+            <toc-element topic="senior.topic">
+                <toc-element topic="senior-product-integration.topic"/>
+                <toc-element topic="atualizacao-saldo-em-estoque.topic"/>
+                <toc-element topic="atualizacao-de-era.topic">
+                </toc-element>
+                <toc-element topic="baixa-de-saldo.topic"/>
+            </toc-element>
+        </toc-element>
+        <toc-element topic="Planejamento-Nutricional.topic"/>
+        <toc-element topic="Cria.topic"/>
+        <toc-element topic="Gestão-de-Pasto.topic"/>
+        <toc-element topic="Confinamento.topic"/>
+        <toc-element topic="TIP.topic">
+            <toc-element topic="indicadores-da-TIP.topic"/>
+        </toc-element>
+    </toc-element>
+</instance-profile>
