@@ -8,9 +8,9 @@
 
     <note>
         <b>Webservice:</b>
-        <format style="underline" color="CornflowerBlue">
+        <code-block>
             http://192.168.100.19:18080/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_est_estoques?wsdl
-        </format>
+        </code-block>
         <p><b>Porta</b>:
             <format style="italic" color="Chocolate">Transferência entre produtos</format>
         </p>
