@@ -14,9 +14,13 @@
 
         <list>
             <li>O Webservice deve sincronizar periodicamente os produtos do sênior</li>
-            <li>O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no peccode</li>
-            <li><b>Desejável</b>: Parametrizar a chamada para buscar apenas os últimos produtos adicionados, após a primeira
-                sincronização</li>
+            <li>O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no
+                peccode
+            </li>
+            <li><b>Desejável</b>: Parametrizar a chamada para buscar apenas os últimos produtos adicionados, após a
+                primeira
+                sincronização
+            </li>
         </list>
 
         <note>
@@ -28,5 +32,227 @@
     </chapter>
 
 
+    <chapter title="Consumo">
+
+        <code-block lang="xml">
+
+            <![CDATA[
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.senior.com.br">
+               <soapenv:Header/>
+               <soapenv:Body>
+                  <ser:Exportar_9>
+                     <user>*****</user>
+                     <password>*****</password>
+                     <encryption>0</encryption>
+                     <parameters>
+                        <!--Optional:-->
+                        <codDer></codDer>
+                        <!--Optional:-->
+                        <codEmp>3</codEmp>
+                        <!--Optional:-->
+                        <codFil>1</codFil>
+                        <!--Optional:-->
+                        <codPro></codPro>
+                        <!--Optional:-->
+                        <flowInstanceID></flowInstanceID>
+                        <!--Optional:-->
+                        <flowName></flowName>
+                        <!--Optional:-->
+                        <identificadorSistema>PEC</identificadorSistema>
+                        <!--Optional:-->
+                        <indVen></indVen>
+                        <!--Optional:-->
+                        <produtoExcluido></produtoExcluido>
+                        <!--Optional:-->
+                        <quantidadeRegistros>1</quantidadeRegistros>
+                        <!--Optional:-->
+                        <tipoIntegracao>T</tipoIntegracao>
+                     </parameters>
+                  </ser:Exportar_9>
+               </soapenv:Body>
+            </soapenv:Envelope>
+            ]]>
+
+        </code-block>
+
+    </chapter>
+
+    <chapter title="Retorno">
+
+        <code-block lang="xml">
+
+            <![CDATA[
+            <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+               <S:Body>
+                  <ns2:Exportar_9Response xmlns:ns2="http://services.senior.com.br">
+                     <result>
+                        <erroExecucao xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                        <finalizaramRegistros>N</finalizaramRegistros>
+                        <mensagemRetorno>Processado com sucesso.</mensagemRetorno>
+                        <numeroLote>6</numeroLote>
+                        <produto>
+                           <agrQcr>0</agrQcr>
+                           <altPro>0.0</altPro>
+                           <basCre>0</basCre>
+                           <claPro>0</claPro>
+                           <codAge></codAge>
+                           <codAnp>0</codAnp>
+                           <codCor>0</codCor>
+                           <codEmp>3</codEmp>
+                           <codEnq>0</codEnq>
+                           <codFam>104003</codFam>
+                           <codIcl>0</codIcl>
+                           <codNtg>0</codNtg>
+                           <codPdv>0.0</codPdv>
+                           <codPro>34801</codPro>
+                           <codRoy>0</codRoy>
+                           <comPro>0.0</comPro>
+                           <conAgu>0</conAgu>
+                           <conEne>0</conEne>
+                           <cplPro></cplPro>
+                           <criRat>0</criRat>
+                           <ctaDcd>0</ctaDcd>
+                           <ctaDci>0</ctaDci>
+                           <ctaFcr>0</ctaFcr>
+                           <ctaFdv>0</ctaFdv>
+                           <ctaRcr>0</ctaRcr>
+                           <ctaRed>0</ctaRed>
+                           <derivacao>
+                              <altDer>0.0</altDer>
+                              <codAgr>0</codAgr>
+                              <codBar>0.0</codBar>
+                              <codCor>0</codCor>
+                              <codDer></codDer>
+                              <codEmb>0</codEmb>
+                              <codEmp>3</codEmp>
+                              <codMot>0</codMot>
+                              <codPdv>0</codPdv>
+                              <codPro>34801</codPro>
+                              <codReg>0</codReg>
+                              <codRoy>0</codRoy>
+                              <comDer>0.0</comDer>
+                              <culInd>0</culInd>
+                              <datMed>10/11/2023</datMed>
+                              <desCpl></desCpl>
+                              <desDer></desDer>
+                              <devPro>0</devPro>
+                              <diaRep>0</diaRep>
+                              <diaVlt>0</diaVlt>
+                              <dsdDer>0.0</dsdDer>
+                              <expWms>0</expWms>
+                              <horAlt>0</horAlt>
+                              <horCus>0</horCus>
+                              <horGer>0</horGer>
+                              <horPal>0</horPal>
+                              <horPfx>0</horPfx>
+                              <icmFix>0.0</icmFix>
+                              <indExp>0</indExp>
+                              <larDer>0.0</larDer>
+                              <notFor>0.0</notFor>
+                              <numAnx>0.0</numAnx>
+                              <perCit>0.0</perCit>
+                              <perIcs>0.0</perIcs>
+                              <perPrd>0.0</perPrd>
+                              <pesBru>0.0</pesBru>
+                              <pesLiq>0.0</pesLiq>
+                              <preCus>0.0</preCus>
+                              <preFix>0.0</preFix>
+                              <preMed>1996.0624615385</preMed>
+                              <preRep>0.0</preRep>
+                              <preUen>0.0</preUen>
+                              <preUis>0.0</preUis>
+                              <qtdBcp>0.0</qtdBcp>
+                              <qtdCic>0.0</qtdCic>
+                              <qtdCus>0.0</qtdCus>
+                              <qtdEmb>0.0</qtdEmb>
+                              <qtdIql>0.0</qtdIql>
+                              <qtdMax>0.0</qtdMax>
+                              <qtdMcf>0</qtdMcf>
+                              <qtdMin>0.0</qtdMin>
+                              <qtdMlt>0.0</qtdMlt>
+                              <qtdPrd>0.0</qtdPrd>
+                              <rotAnx>0</rotAnx>
+                              <seqCmd>0</seqCmd>
+                              <tipCur>0</tipCur>
+                              <tolPes>0.0</tolPes>
+                              <usuAlt>0.0</usuAlt>
+                              <usuGer>0.0</usuGer>
+                              <vlrCid>0.0</vlrCid>
+                              <vlrCn2>0.0</vlrCn2>
+                              <vlrCn3>0.0</vlrCn3>
+                              <vlrUis>0.0</vlrUis>
+                              <vlrVar>0.0</vlrVar>
+                              <vltDer>0</vltDer>
+                              <volDer>0.0</volDer>
+                           </derivacao>
+                           <desNfv>BOVINO FEMEA 13 A 24 MESES</desNfv>
+                           <desPro>BOVINO FEMEA 13 A 24 MESES</desPro>
+                           <expWms>0</expWms>
+                           <filPrd>0</filPrd>
+                           <finCdp>0</finCdp>
+                           <finCrp>0</finCrp>
+                           <gruTen>0</gruTen>
+                           <horAlt>0</horAlt>
+                           <horGer>0</horGer>
+                           <horPal>0</horPal>
+                           <horVis>0</horVis>
+                           <indExp>0</indExp>
+                           <larPro>0.0</larPro>
+                           <limIcp>0</limIcp>
+                           <motDes>0</motDes>
+                           <natCof>0</natCof>
+                           <natPis>0</natPis>
+                           <notFor>0.0</notFor>
+                           <numAnx>0.0</numAnx>
+                           <numOri>0</numOri>
+                           <perCim>0.0</perCim>
+                           <perCof>0.0</perCof>
+                           <perCsl>0.0</perCsl>
+                           <perDif>0.0</perDif>
+                           <perFun>0.0</perFun>
+                           <perGas>0.0</perGas>
+                           <perIpi>0.0</perIpi>
+                           <perIrf>0.0</perIrf>
+                           <perOur>0.0</perOur>
+                           <perPim>0.0</perPim>
+                           <perPis>0.0</perPis>
+                           <perSen>0.0</perSen>
+                           <pesBru>0.0</pesBru>
+                           <pesLiq>0.0</pesLiq>
+                           <proEpe>0</proEpe>
+                           <proImp>0</proImp>
+                           <przRec>0</przRec>
+                           <qtdAfe>0</qtdAfe>
+                           <qtdGop>0.0</qtdGop>
+                           <qtdMax>0.0</qtdMax>
+                           <qtdMin>0.0</qtdMin>
+                           <qtdMlt>0.0</qtdMlt>
+                           <qtdMve>0.0</qtdMve>
+                           <qtdVol>0</qtdVol>
+                           <rotAnx>0</rotAnx>
+                           <seqInt>0</seqInt>
+                           <tipCic>0</tipCic>
+                           <tipInt>0</tipInt>
+                           <tipLig>0</tipLig>
+                           <tipPro>C</tipPro>
+                           <tmpDse>0</tmpDse>
+                           <tolPes>0.0</tolPes>
+                           <tolQmx>0.0</tolQmx>
+                           <uniMed>CB</uniMed>
+                           <usuAlt>0.0</usuAlt>
+                           <usuGer>0.0</usuGer>
+                           <vltPro>0</vltPro>
+                           <volPro>0.0</volPro>
+                        </produto>
+                        <tipoRetorno>0</tipoRetorno>
+                     </result>
+                  </ns2:Exportar_9Response>
+               </S:Body>
+            </S:Envelope>
+            ]]>
+
+        </code-block>
+
+    </chapter>
 
 </topic>
