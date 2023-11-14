@@ -6,16 +6,12 @@
        title="Consulta de Saldo em Estoque" id="integracoes-senior-consultar-estoque">
 
     <chapter title="Descrição" id="description">
-
         <note>
             <b>Webservice:</b>
-            <a href="https://google.com">
-                <format color="CornflowerBlue">
-                    http://example.com/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_est_saldoestoque?wsdl
-                </format>
-            </a>
+            <code-block>
+                http://example.com/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_est_saldoestoque?wsdl
+            </code-block>
         </note>
-
     </chapter>
 
     <chapter title="XML de Consumo" id="xml_de_consumo">

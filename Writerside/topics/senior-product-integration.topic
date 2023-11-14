@@ -6,26 +6,27 @@
        title="Integrações de Produto" id="senior-product-integration" help-id="senior-product-integrations">
 
 
-    <p>http://192.168.100.19:18080/g5-senior-services/sapiens_Synccom_senior_g5_co_cad_produtos?wsdl</p>
+    <chapter title="Descrição" id="description">
+        <p>
+            PecCode irá buscar do webservice e gravar os produtos retornados. O webservice deve retornar apenas os
+            produtos derivados da familia de produtos da pecuária
+        </p>
 
-    <p>
-        PecCode irá buscar do webservice e gravar os produtos retornados. o webservice deve retornar apenas os
-        produtos derivados da familia de produtos da pecuária
-    </p>
+        <list>
+            <li>O Webservice deve sincronizar periodicamente os produtos do sênior</li>
+            <li>O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no peccode</li>
+            <li><b>Desejável</b>: Parametrizar a chamada para buscar apenas os últimos produtos adicionados, após a primeira
+                sincronização</li>
+        </list>
 
+        <note>
+            <b>Webservice:</b>
+            <format color="CornflowerBlue">
+                http://URL:PORT/g5-senior-services/sapiens_Synccom_senior_g5_co_cad_produtos?wsdl
+            </format>
+        </note>
+    </chapter>
 
-    <list>
-        <li>
-            O Webservice deve sincronizar periodicamente os produtos do sênior
-        </li>
-        <li>
-            O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no PecCode
-        </li>
-        <li>
-            Desejável parametrizar a chamada para buscar apenas os últimos produtos adicionados, após a primeira
-            sincronização
-        </li>
-    </list>
 
 
 </topic>
