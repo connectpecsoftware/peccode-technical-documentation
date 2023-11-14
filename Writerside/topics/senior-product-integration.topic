@@ -19,7 +19,7 @@
             O Webservice deve sincronizar periodicamente os produtos do sênior
         </li>
         <li>
-            O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no peccode
+            O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no PecCode
         </li>
         <li>
             Desejável parametrizar a chamada para buscar apenas os últimos produtos adicionados, após a primeira

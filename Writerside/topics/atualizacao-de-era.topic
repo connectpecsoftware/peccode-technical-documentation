@@ -7,7 +7,7 @@
 
     <note>
         <b>Webservice:</b>
-        <code-block >
+        <code-block>
             http://URL:PORT/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_est_estoques?wsdl
         </code-block>
 
@@ -15,4 +15,106 @@
             <format style="italic" color="Chocolate">Transferência entre produtos</format>
         </p>
     </note>
+
+    <code-block lang="xml">
+        <![CDATA[
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.senior.com.br">
+               <soapenv:Header/>
+               <soapenv:Body>
+                  <ser:TransferenciaProdutos>
+                    <user>******</user>
+                     <password>*****</password>
+                     <encryption>0</encryption>
+                     <parameters>
+                        <!--Optional:-->
+                        <flowInstanceID>?</flowInstanceID>
+                        <!--Optional:-->
+                        <flowName>?</flowName>
+                        <!--Zero or more repetitions:-->
+                        <transferenciaEntreProdutosSaida>
+                           <!--Optional:-->
+                           <codCcu></codCcu>
+                           <!--Optional:-->
+                           <codCli></codCli>
+                           <!--Optional:-->
+                           <codDep>PEC004</codDep>
+                           <!--Optional:-->
+                           <codDer> </codDer>
+                           <!--Optional:-->
+                           <codEmp>3</codEmp>
+                           <!--Optional:-->
+                           <codFil>2</codFil>
+                           <!--Optional:-->
+                           <codFor></codFor>
+                           <!--Zero or more repetitions:-->
+                           <codLot>
+                              <!--Optional:-->
+                              <codLot></codLot>
+                              <!--Optional:-->
+                              <qtdEst>1</qtdEst>
+                           </codLot>
+                           <!--Optional:-->
+                           <codPro>34799</codPro>
+                           <!--Optional:-->
+                           <codTns>90295</codTns>
+                           <!--Optional:-->
+                           <ctaFin></ctaFin>
+                           <!--Optional:-->
+                           <ctaRed></ctaRed>
+                           <!--Optional:-->
+                           <datMov>06/11/2023</datMov>
+                           <!--Optional:-->
+                           <numDoc>06112023</numDoc>
+                           <!--Optional:-->
+                           <qtdMov>1</qtdMov>
+                           <!--Optional:-->
+                           <uniMed>CB</uniMed>
+                           <!--Optional:-->
+                           <vlrMov>100</vlrMov>
+                        </transferenciaEntreProdutosSaida>
+                        <!--Zero or more repetitions:-->
+                        <transferenciasEntreProdutosEntrada>
+                           <!--Optional:-->
+                           <codCcu></codCcu>
+                           <!--Optional:-->
+                           <codCli></codCli>
+                           <!--Optional:-->
+                           <codDep>PEC004</codDep>
+                           <!--Optional:-->
+                           <codDer> </codDer>
+                           <!--Optional:-->
+                           <codFor></codFor>
+                           <!--Zero or more repetitions:-->
+                           <codLot>
+                              <!--Optional:-->
+                              <codLot></codLot>
+                              <!--Optional:-->
+                              <datFab></datFab>
+                              <!--Optional:-->
+                              <datVlt></datVlt>
+                              <!--Optional:-->
+                              <qtdEst>1</qtdEst>
+                           </codLot>
+                           <!--Optional:-->
+                           <codPro>34801</codPro>
+                           <!--Optional:-->
+                           <ctaFin></ctaFin>
+                           <!--Optional:-->
+                           <ctaRed></ctaRed>
+                           <!--Optional:-->
+                           <numDoc>06032023</numDoc>
+                           <!--Optional:-->
+                           <qtdMov>1</qtdMov>
+                           <!--Optional:-->
+                           <uniMed>CB</uniMed>
+                           <!--Optional:-->
+                           <vlrMov>100</vlrMov>
+                        </transferenciasEntreProdutosEntrada>
+                     </parameters>
+                  </ser:TransferenciaProdutos>
+               </soapenv:Body>
+            </soapenv:Envelope>
+        ]]>
+    </code-block>
+
 </topic>

@@ -14,10 +14,12 @@
         <toc-element topic="integrations.topic">
             <toc-element topic="senior.topic">
                 <toc-element topic="senior-product-integration.topic"/>
-                <toc-element topic="atualizacao-saldo-em-estoque.topic"/>
-                <toc-element topic="atualizacao-de-era.topic">
-                </toc-element>
+                <toc-element topic="integracoes-senior-consultar-estoque.topic"/>
+                <toc-element topic="atualizacao-de-era.topic"/>
                 <toc-element topic="baixa-de-saldo.topic"/>
+                <toc-element topic="pc-integracoes-senior-movestoque.topic">
+                </toc-element>
+                <toc-element topic="atualizacao-saldo-em-estoque.topic"/>
             </toc-element>
         </toc-element>
         <toc-element topic="Planejamento-Nutricional.topic"/>
