@@ -11,7 +11,6 @@
             PecCode irá buscar do webservice e gravar os produtos retornados. O webservice deve retornar apenas os
             produtos derivados da familia de produtos da pecuária
         </p>
-
         <list>
             <li>O Webservice deve sincronizar periodicamente os produtos do sênior</li>
             <li>O Webservice sênior ser configurado para entrega apenas dos produtos necessários para utilização no
@@ -22,7 +21,6 @@
                 sincronização
             </li>
         </list>
-
         <note>
             <b>Webservice:</b>
             <format color="CornflowerBlue">
