@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Consulta de Saldo em Estoque" id="integracoes-senior-consultar-estoque">
+
+    <chapter title="Descrição" id="description">
+        <note>
+            <b>Webservice:</b>
+            <code-block>
+                http://example.com/g5-senior-services/sapiens_Synccom_senior_g5_co_mcm_est_saldoestoque?wsdl
+            </code-block>
+        </note>
+    </chapter>
+
+    <chapter title="XML de Consumo" id="xml_de_consumo">
+        <code-block lang="xml">
+            <![CDATA[
+            <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://services.senior.com.br">
+               <soapenv:Header/>
+               <soapenv:Body>
+                  <ser:Exportar_2>
+                     <user>*****</user>
+                     <password>****</password>
+                     <encryption>0</encryption>
+                     <parameters>
+                        <!--Optional:-->
+                        <codDep></codDep>
+                        <!--Optional:-->
+                        <codDer>1</codDer>
+                        <!--Optional:-->
+                        <codEmp>3</codEmp>
+                        <!--Optional:-->
+                        <codFil>1</codFil>
+                        <!--Optional:-->
+                        <codPro>005</codPro>
+                        <!--Optional:-->
+                        <flowInstanceID></flowInstanceID>
+                        <!--Optional:-->
+                        <flowName></flowName>
+                        <!--Optional:-->
+                        <identificadorSistema>PEC</identificadorSistema>
+                        <!--Optional:-->
+                        <quantidadeRegistros>10</quantidadeRegistros>
+                        <!--Optional:-->
+                        <tipoIntegracao>T</tipoIntegracao>
+                     </parameters>
+                  </ser:Exportar_2>
+               </soapenv:Body>
+            </soapenv:Envelope>
+
+        ]]>
+
+        </code-block>
+    </chapter>
+
+    <chapter title="XML de Retorno" id="xml_de_retorno">
+        <code-block lang="xml">
+            <![CDATA[
+                <S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+                   <S:Body>
+                      <ns2:Exportar_2Response xmlns:ns2="http://services.senior.com.br">
+                         <result>
+                            <erroExecucao xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+                            <finalizaramRegistros>N</finalizaramRegistros>
+                            <mensagemRetorno>Processado com sucesso.</mensagemRetorno>
+                            <numeroLote>2</numeroLote>
+                            <saldoEstoque>
+                               <codDep>014</codDep>
+                               <codDer></codDer>
+                               <codEmp>3</codEmp>
+                               <codPro>00011</codPro>
+                               <datNfc>14/11/2022</datNfc>
+                               <preMed>210,976</preMed>
+                               <preNfc>254.1879666667</preNfc>
+                               <qtdDis>0.0</qtdDis>
+                               <qtdEst>0.0</qtdEst>
+                               <qtdNfc>1500.0</qtdNfc>
+                            </saldoEstoque>
+                            <tipoRetorno>0</tipoRetorno>
+                         </result>
+                      </ns2:Exportar_2Response>
+                   </S:Body>
+                </S:Envelope>
+            ]]>
+        </code-block>
+    </chapter>
+
+</topic>
