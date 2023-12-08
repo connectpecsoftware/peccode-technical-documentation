@@ -7,7 +7,11 @@
 
     <toc-element topic="Deploy.topic">
         <toc-element topic="AWS.md">
-            <toc-element topic="Deploy-AWS-ECS.topic"/>
+            <toc-element topic="Deploy-AWS-ECS.topic">
+                <toc-element topic="ECR-Deploy-de-imagens.topic"/>
+                <toc-element topic="ECS-Definição-de-Tarefa.topic"/>
+                <toc-element topic="ECS-Deploy-do-Servico.topic"/>
+            </toc-element>
         </toc-element>
     </toc-element>
     <toc-element topic="peccode.topic">
