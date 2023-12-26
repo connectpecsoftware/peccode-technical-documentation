@@ -6,6 +6,22 @@
        title="Consulta de Saldo em Estoque" id="integracoes-senior-consultar-estoque">
 
     <chapter title="Descrição" id="description">
+
+        <p>
+            A Integração entre saldo de estoque visa deixar o saldo dos produtos sincornizados entre
+            PecCode e ERP Sênior.
+        </p>
+
+        <procedure title="Fluxo de Integração">
+            <p>A sincronização deve ser Iniciada .... com frequencia ....</p>
+            <step>Buscar Produtos no Sênior</step>
+            <step>Consistir o estoque do Sênior x PecCode</step>
+            <step>Atualizar Saldo PecCode</step>
+            <step>Fechar conexão</step>
+
+            <p>Integração Finalizada!</p>
+        </procedure>
+
         <note>
             <b>Webservice:</b>
             <code-block>

@@ -6,13 +6,19 @@
                  start-page="">
 
     <toc-element topic="Deploy.topic">
+        <toc-element topic="containerization.topic"/>
         <toc-element topic="AWS.md">
             <toc-element topic="Deploy-AWS-ECS.topic"/>
         </toc-element>
     </toc-element>
     <toc-element topic="peccode.topic">
         <toc-element topic="integrations.topic">
+            <toc-element topic="metadata-dictionary.topic"/>
+            <toc-element topic="parametrization.topic">
+                <toc-element topic="baixa-por-morte.topic"/>
+            </toc-element>
             <toc-element topic="senior.topic">
+                <toc-element topic="senior-animal-death-decrease.topic"/>
                 <toc-element topic="senior-product-integration.topic"/>
                 <toc-element topic="integracoes-senior-consultar-estoque.topic"/>
                 <toc-element topic="atualizacao-de-era.topic"/>

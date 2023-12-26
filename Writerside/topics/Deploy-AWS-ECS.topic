@@ -18,10 +18,24 @@
 
 
             <chapter title="1.2 Procedimento" id="1_2_procedimento">
-                - Execute `aws ecr get-login-password` para autenticar o Docker ao ECR.
-                - Utilize `docker tag` para marcar sua imagem local com o repositório ECR.
-                - Faça push da imagem para o ECR com o comando `docker push`.
+                <procedure>
+                    <step>Execute `aws ecr get-login-password` para autenticar o Docker ao ECR.</step>
+                    <step>Utilize `docker tag` para marcar sua imagem local com o repositório ECR</step>
+                    <step>Faça push da imagem para o ECR com o comando `docker push`.</step>
+                </procedure>
+
+                <chapter title="1.2.1 Comandos" id="1_3_comandos">
+                    <procedure>
+                        <step>aws ecr get-login-password --region sa-east-1 | docker login --username AWS --password-stdin 978700076281.dkr.ecr.sa-east-1.amazonaws.com</step>
+                        <step>docker build -f deploy/prod/Dockerfile  -t livestock-breeding-service .</step>
+                        <step>docker tag livestock-breeding-service:latest 978700076281.dkr.ecr.sa-east-1.amazonaws.com/livestock-breeding-service:latest</step>
+                        <step>docker push 978700076281.dkr.ecr.sa-east-1.amazonaws.com/livestock-breeding-service:latest</step>
+                    </procedure>
+                </chapter>
+
             </chapter>
+
+
 
         </chapter>
 

@@ -24,7 +24,9 @@
             <li>Entrada de Animais por Nascimento</li>
             <li>Baixa por Morte</li>
             <li>Baixa de insumos da Fábrica de Ração</li>
+            <li>Valorização de estoque</li>
+            <li>Devolução dos custos para o ERP Sênior</li>
+            <li>Vínculo de Nota Fiscal com operação de Saída</li>
         </list>
-
     </chapter>
 </topic>
