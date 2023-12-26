@@ -42,8 +42,8 @@
         <chapter title="2. Criar Definição de Tarefa" id="create_task_definition">
             <chapter title="2.1 Pré-requisitos" id="pre-requisitos">
                 <list>
-                    <li>Decida sobre a configuração da tarefa, incluindo CPU, memória, variáveis de ambiente e configurações de
-                        rede.</li>
+                    <li>Decida sobre a configuração da tarefa, incluindo CPU, memória, variáveis de ambiente
+                        e configurações de rede.</li>
                 </list>
             </chapter>
 
@@ -150,5 +150,15 @@
 
     </chapter>
 
+
+    <chapter title="Realizando o Deploy para estrutras já existentes" id="realizando_o_deploy">
+
+        <p>Confiurar AWS CLI</p>
+        <p>Build da imagem local</p>
+        <p>Enviar imagem para aws</p>
+        <p>Atualizar defnição de tarefa (caso necessário)</p>
+        <p>Atualizar defnição da Serviço</p>
+
+    </chapter>
 
 </topic>
