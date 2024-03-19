@@ -3,6 +3,7 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Dicionário de Dados" id="metadata-dictionary">
+       title="ECS - Defini&#231;&#227;o de Tarefa" id="ECS-definicao-de-Tarefa" help-id="ECS-Definição-de-Tarefa">
 
+    <p>Start typing here...</p>
 </topic>

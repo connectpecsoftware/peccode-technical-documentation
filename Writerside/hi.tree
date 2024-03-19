@@ -6,11 +6,12 @@
                  start-page="">
 
     <toc-element topic="Deploy.topic">
+        <toc-element topic="estrutura-de-deploy.topic"/>
         <toc-element topic="containerization.topic"/>
         <toc-element topic="AWS.md">
             <toc-element topic="Deploy-AWS-ECS.topic">
                 <toc-element topic="ECR-Deploy-de-imagens.topic"/>
-                <toc-element topic="ECS-Definição-de-Tarefa.topic"/>
+                <toc-element topic="ECS-definicao-de-Tarefa.topic"/>
                 <toc-element topic="ECS-Deploy-do-Servico.topic"/>
             </toc-element>
         </toc-element>
@@ -18,11 +19,14 @@
     <toc-element topic="peccode.topic">
         <toc-element topic="integrations.topic">
             <toc-element topic="metadata-dictionary.topic"/>
+            <toc-element topic="integracao-movimentacao-estoque.topic"/>
             <toc-element topic="parametrization.topic">
                 <toc-element topic="baixa-por-morte.topic"/>
             </toc-element>
             <toc-element topic="senior.topic">
-                <toc-element topic="senior-animal-death-decrease.topic"/>
+                <toc-element topic="senior-animal-death-decrease.topic">
+                    <toc-element topic="peccode-integracoes-senior-baixa-morte-dicionario-de-dados.topic"/>
+                </toc-element>
                 <toc-element topic="senior-product-integration.topic"/>
                 <toc-element topic="integracoes-senior-consultar-estoque.topic"/>
                 <toc-element topic="atualizacao-de-era.topic"/>
@@ -38,6 +42,11 @@
         <toc-element topic="Confinamento.topic"/>
         <toc-element topic="TIP.topic">
             <toc-element topic="indicadores-da-TIP.topic"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="data-dictionary.topic">
+        <toc-element topic="data-dic-integrations.topic">
+            <toc-element topic="parametros-de-integracao.topic"/>
         </toc-element>
     </toc-element>
 </instance-profile>

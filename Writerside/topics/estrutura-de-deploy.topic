@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Estrutura de Deploy" id="estrutura-de-deploy">
+
+
+    <chapter title="Estrutura de Branch" id="estrutura_de_branch">
+        <chapter title="release" id="release">
+            <chapter title="Propósito" id="proposito">
+                Serve como a branch principal de desenvolvimento, onde todas as novas funcionalidades, melhorias e
+                correções de bugs são integradas primeiramente. É a branch "viva", onde o código evolui continuamente
+                com contribuições da equipe de desenvolvimento.
+            </chapter>
+            <chapter title="Responsabilidades" id="responsabilidades">
+                <list>
+                    <li>
+                        Integração Contínua: Recebe merges frequentes das branches de feature, garantindo que novas
+                        adições sejam continuamente testadas em conjunto.
+                    </li>
+                    <li>
+                        Testes: Antes de ser promovida para a master, é crucial que a release passe por uma bateria
+                        completa de testes automatizados e manuais para garantir que as novas alterações não introduzam
+                        bugs no produto final.
+                    </li>
+                    <li>
+                        Preparação para Release: Serve como uma preparação para o código que será lançado. Antes do dia
+                        de deploy, a release deve estar em um estado estável, com todas as funcionalidades planejadas
+                        para a próxima release já integradas e testadas.
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+        <chapter title="Master" id="master">
+            <chapter title="Propósito" id="proposito-master">
+                Representa o estado atual do produto como está em produção. Todo código aqui deve ser considerado
+                estável e pronto para deploy.
+
+            </chapter>
+            <chapter title="Responsabilidades" id="responsabilidades-master">
+                <list>
+                    <li>
+                        LiveCode: Atua como a fonte definitiva para o código em produção. Qualquer coisa que
+                        esteja no master está ou estará em breve no ambiente de produção.
+                    </li>
+                    <li>
+                        Releases: Quando um deploy é agendado, a release é mergeada com a master. Isso significa que a
+                        master deve sempre refletir exatamente o que está ou estará disponível para os usuários finais.
+                    </li>
+                    <li>
+                        Tagging de Releases: Após cada merge para a master, uma nova tag de versão deve ser criada para
+                        documentar a release atual e facilitar possíveis rollbacks ou referências futuras.
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+
+        <chapter title="hotfix" id="hotfix">
+            <chapter title="Propósito" id="proposito-hotfix">
+                Usada exclusivamente para correções urgentes que precisam ser aplicadas diretamente na produção,
+                contornando o ciclo de desenvolvimento regular.
+            </chapter>
+            <chapter title="Responsabilidades" id="responsabilidades-hotfix">
+                <list>
+                    <li>
+                        Correções de Emergência: Quando um problema crítico é identificado em produção, uma branch
+                        hotfix é criada a partir da master para tratar especificamente dessa questão.
+                    </li>
+                    <li>
+                        Agilidade: A correção deve ser desenvolvida, testada e deployada de maneira rápida e eficiente
+                        para minimizar o impacto sobre os usuários finais.
+                    </li>
+                    <li>
+                        Integração: Após a correção ser aplicada em produção, a branch hotfix deve ser mergeada tanto na
+                        master quanto na release, garantindo que a correção seja incorporada ao ciclo de desenvolvimento
+                        regular e evitando que o problema reocorra em futuras releases.
+                    </li>
+                </list>
+            </chapter>
+        </chapter>
+    </chapter>
+
+    <chapter title="Lógica de Commit" id="logica_de_commit">
+        <code-block lang="mermaid">
+            gitGraph
+            commit
+            commit
+            branch release
+            branch Feature-1
+            checkout Feature-1
+            commit id: "Commit 1"
+            commit id: "Commit 2"
+            checkout release
+            merge Feature-1
+            checkout main
+            merge release
+            commit
+            commit
+        </code-block>
+    </chapter>
+
+
+</topic>
