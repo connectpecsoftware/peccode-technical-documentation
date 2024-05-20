@@ -10,4 +10,8 @@
         <description>Created after removal of "Deploy AWS ECS" from Help Instance</description>
         <accepts>Deploy-AWS-ECS.html</accepts>
     </rule>
+    <rule id="2ab8f19b">
+        <description>Created after removal of "Estrutura de Deploy" from Help Instance</description>
+        <accepts>estrutura-de-deploy.html</accepts>
+    </rule>
 </rules>

@@ -3,11 +3,10 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
 <topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
-       title="Estrutura de Deploy" id="estrutura-de-deploy">
-
+       title="Estrutura de Repositórios" id="git-hub-structure">
 
     <chapter title="Estrutura de Branch" id="estrutura_de_branch">
-        <chapter title="release" id="release">
+        <chapter title="Release" id="release">
             <chapter title="Propósito" id="proposito">
                 Serve como a branch principal de desenvolvimento, onde todas as novas funcionalidades, melhorias e
                 correções de bugs são integradas primeiramente. É a branch "viva", onde o código evolui continuamente
@@ -99,6 +98,4 @@
             commit
         </code-block>
     </chapter>
-
-
 </topic>

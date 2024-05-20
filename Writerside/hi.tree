@@ -6,7 +6,6 @@
                  start-page="">
 
     <toc-element topic="Deploy.topic">
-        <toc-element topic="estrutura-de-deploy.topic"/>
         <toc-element topic="containerization.topic"/>
         <toc-element topic="AWS.md">
             <toc-element topic="Deploy-AWS-ECS.topic">
@@ -17,6 +16,7 @@
         </toc-element>
     </toc-element>
     <toc-element topic="peccode.topic">
+        <toc-element topic="git-hub-structure.topic"/>
         <toc-element topic="integrations.topic">
             <toc-element topic="metadata-dictionary.topic"/>
             <toc-element topic="integracao-movimentacao-estoque.topic"/>
@@ -47,6 +47,12 @@
     <toc-element topic="data-dictionary.topic">
         <toc-element topic="data-dic-integrations.topic">
             <toc-element topic="parametros-de-integracao.topic"/>
+        </toc-element>
+    </toc-element>
+    <toc-element topic="processos.topic">
+        <toc-element topic="deploy-process.topic">
+            <toc-element topic="deploy-process-frontend.topic"/>
+            <toc-element topic="deploy-process-backend.topic"/>
         </toc-element>
     </toc-element>
 </instance-profile>
