@@ -3,56 +3,14 @@
         SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
 
 <instance-profile id="hi" name="Help Instance"
-                 start-page="">
+                 start-page="home.topic">
 
-    <toc-element topic="Deploy.topic">
-        <toc-element topic="containerization.topic"/>
-        <toc-element topic="AWS.md">
-            <toc-element topic="Deploy-AWS-ECS.topic">
-                <toc-element topic="ECR-Deploy-de-imagens.topic"/>
-                <toc-element topic="ECS-definicao-de-Tarefa.topic"/>
-                <toc-element topic="ECS-Deploy-do-Servico.topic"/>
-            </toc-element>
+    <toc-element topic="home.topic"/>
+    <toc-element topic="diretrizes.topic">
+        <toc-element topic="gestao-equipe.topic"/>
+        <toc-element topic="arqutetura-engenharia-software.topic">
+            <toc-element topic="padronizacao-integracoes.topic"/>
         </toc-element>
     </toc-element>
-    <toc-element topic="peccode.topic">
-        <toc-element topic="git-hub-structure.topic"/>
-        <toc-element topic="integrations.topic">
-            <toc-element topic="metadata-dictionary.topic"/>
-            <toc-element topic="integracao-movimentacao-estoque.topic"/>
-            <toc-element topic="parametrization.topic">
-                <toc-element topic="baixa-por-morte.topic"/>
-            </toc-element>
-            <toc-element topic="senior.topic">
-                <toc-element topic="senior-animal-death-decrease.topic">
-                    <toc-element topic="peccode-integracoes-senior-baixa-morte-dicionario-de-dados.topic"/>
-                </toc-element>
-                <toc-element topic="senior-product-integration.topic"/>
-                <toc-element topic="integracoes-senior-consultar-estoque.topic"/>
-                <toc-element topic="atualizacao-de-era.topic"/>
-                <toc-element topic="baixa-de-saldo.topic"/>
-                <toc-element topic="pc-integracoes-senior-movestoque.topic">
-                </toc-element>
-                <toc-element topic="atualizacao-saldo-em-estoque.topic"/>
-            </toc-element>
-        </toc-element>
-        <toc-element topic="Planejamento-Nutricional.topic"/>
-        <toc-element topic="Cria.topic"/>
-        <toc-element topic="gestao-de-pasto.topic"/>
-        <toc-element topic="Confinamento.topic"/>
-        <toc-element topic="TIP.topic">
-            <toc-element topic="indicadores-da-TIP.topic"/>
-        </toc-element>
-    </toc-element>
-    <toc-element topic="data-dictionary.topic">
-        <toc-element topic="data-dic-integrations.topic">
-            <toc-element topic="parametros-de-integracao.topic"/>
-        </toc-element>
-    </toc-element>
-    <toc-element topic="processos.topic">
-        <toc-element topic="deploy-process.topic">
-            <toc-element topic="deploy-process-frontend.topic"/>
-            <toc-element topic="deploy-process-backend.topic"/>
-        </toc-element>
-    </toc-element>
+    <toc-element topic="guias-e-documentacoes.topic"/>
 </instance-profile>

@@ -14,4 +14,164 @@
         <description>Created after removal of "Estrutura de Deploy" from Help Instance</description>
         <accepts>estrutura-de-deploy.html</accepts>
     </rule>
+    <rule id="39a4d452">
+        <description>Created after removal of "Criação de Containers" from Help Instance</description>
+        <accepts>containerization.html</accepts>
+    </rule>
+    <rule id="3bfc0903">
+        <description>Created after removal of "AWS" from Help Instance</description>
+        <accepts>AWS.html</accepts>
+    </rule>
+    <rule id="6e10f4a4">
+        <description>Created after removal of "Deploy AWS ECS" from Help Instance</description>
+        <accepts>Deploy-AWS-ECS.html</accepts>
+    </rule>
+    <rule id="5aea9814">
+        <description>Created after removal of "ECR - Deploy de imagens" from Help Instance</description>
+        <accepts>ECR-Deploy-de-imagens.html</accepts>
+    </rule>
+    <rule id="16b6a9ec">
+        <description>Created after removal of "ECS - Definição de Tarefa" from Help Instance
+            Help IDs that are no longer available in build after removal:
+
+            ECS-Definição-de-Tarefa
+        </description>
+        <accepts>ECS-definicao-de-Tarefa.html</accepts>
+    </rule>
+    <rule id="57d3f5f3">
+        <description>Created after removal of "ECS - Deploy do Serviço" from Help Instance
+            Help IDs that are no longer available in build after removal:
+
+            ECS-Deploy-do-Serviço
+        </description>
+        <accepts>ECS-Deploy-do-Servico.html</accepts>
+    </rule>
+    <rule id="1362f6c1">
+        <description>Created after removal of "Estrutura de Repositórios" from Help Instance</description>
+        <accepts>git-hub-structure.html</accepts>
+    </rule>
+    <rule id="60cb160d">
+        <description>Created after removal of "Integrações" from Help Instance</description>
+        <accepts>integrations.html</accepts>
+    </rule>
+    <rule id="3f4e42bc">
+        <description>Created after removal of "Dicionário de Dados" from Help Instance</description>
+        <accepts>metadata-dictionary.html</accepts>
+    </rule>
+    <rule id="3bd577c0">
+        <description>Created after removal of "Movimentação de Estoque" from Help Instance</description>
+        <accepts>integracao-movimentacao-estoque.html</accepts>
+    </rule>
+    <rule id="7c9e301b">
+        <description>Created after removal of "Parametrização" from Help Instance</description>
+        <accepts>parametrization.html</accepts>
+    </rule>
+    <rule id="5fc43004">
+        <description>Created after removal of "Baixa por Morte" from Help Instance</description>
+        <accepts>baixa-por-morte.html</accepts>
+    </rule>
+    <rule id="2c3b14fb">
+        <description>Created after removal of "Sênior" from Help Instance</description>
+        <accepts>senior.html</accepts>
+    </rule>
+    <rule id="7ac89623">
+        <description>Created after removal of "Baixa por Morte" from Help Instance</description>
+        <accepts>senior-animal-death-decrease.html</accepts>
+    </rule>
+    <rule id="5e080618">
+        <description>Created after removal of "Dicionário de Dados" from Help Instance</description>
+        <accepts>peccode-integracoes-senior-baixa-morte-dicionario-de-dados.html</accepts>
+    </rule>
+    <rule id="37b70a36">
+        <description>Created after removal of "Integrações de Produto" from Help Instance
+            Help IDs that are no longer available in build after removal:
+
+            senior-product-integrations
+        </description>
+        <accepts>senior-product-integration.html</accepts>
+    </rule>
+    <rule id="7c291a57">
+        <description>Created after removal of "Consulta de Saldo em Estoque" from Help Instance</description>
+        <accepts>integracoes-senior-consultar-estoque.html</accepts>
+    </rule>
+    <rule id="7c48dfb5">
+        <description>Created after removal of "Atualização de era" from Help Instance</description>
+        <accepts>atualizacao-de-era.html</accepts>
+    </rule>
+    <rule id="65b3dbad">
+        <description>Created after removal of "Baixa de Insumo " from Help Instance</description>
+        <accepts>baixa-de-saldo.html</accepts>
+    </rule>
+    <rule id="7c91dc72">
+        <description>Created after removal of "Movimentações de Estoque" from Help Instance</description>
+        <accepts>pc-integracoes-senior-movestoque.html</accepts>
+    </rule>
+    <rule id="64f2c5a4">
+        <description>Created after removal of "Atualização saldo em estoque" from Help Instance</description>
+        <accepts>atualizacao-saldo-em-estoque.html</accepts>
+    </rule>
+    <rule id="6fef556b">
+        <description>Created after removal of "Planejamento Nutricional" from Help Instance</description>
+        <accepts>Planejamento-Nutricional.html</accepts>
+    </rule>
+    <rule id="159b82b7">
+        <description>Created after removal of "Gestão de Cria" from Help Instance</description>
+        <accepts>Cria.html</accepts>
+    </rule>
+    <rule id="2d577978">
+        <description>Created after removal of "Gestão de Pasto" from Help Instance
+            Help IDs that are no longer available in build after removal:
+
+            Gestão-de-Pasto
+        </description>
+        <accepts>gestao-de-pasto.html</accepts>
+    </rule>
+    <rule id="4b9875e0">
+        <description>Created after removal of "Confinamento" from Help Instance</description>
+        <accepts>Confinamento.html</accepts>
+    </rule>
+    <rule id="7a6556fa">
+        <description>Created after removal of "TIP" from Help Instance</description>
+        <accepts>TIP.html</accepts>
+    </rule>
+    <rule id="7ee244a5">
+        <description>Created after removal of "indicadores da TIP" from Help Instance</description>
+        <accepts>indicadores-da-TIP.html</accepts>
+    </rule>
+    <rule id="41ca4158">
+        <description>Created after removal of "Integrações" from Help Instance</description>
+        <accepts>data-dic-integrations.html</accepts>
+    </rule>
+    <rule id="17cb7122">
+        <description>Created after removal of "Parâmetros de Integração" from Help Instance</description>
+        <accepts>parametros-de-integracao.html</accepts>
+    </rule>
+    <rule id="1f55b129">
+        <description>Created after removal of "Frontend" from Help Instance</description>
+        <accepts>deploy-process-frontend.html</accepts>
+    </rule>
+    <rule id="7a8748b1">
+        <description>Created after removal of "Backend" from Help Instance</description>
+        <accepts>deploy-process-backend.html</accepts>
+    </rule>
+    <rule id="1903f3a0">
+        <description>Created after removal of "Deploy" from Help Instance</description>
+        <accepts>Deploy.html</accepts>
+    </rule>
+    <rule id="4fd28035">
+        <description>Created after removal of "Arquitetura" from Help Instance
+            Help IDs that are no longer available in build after removal:
+
+            Produto
+        </description>
+        <accepts>peccode.html</accepts>
+    </rule>
+    <rule id="2898c9db">
+        <description>Created after removal of "Dicionário de dados" from Help Instance</description>
+        <accepts>data-dictionary.html</accepts>
+    </rule>
+    <rule id="5dcc5b3d">
+        <description>Created after removal of "Processos Internos" from Help Instance</description>
+        <accepts>processos.html</accepts>
+    </rule>
 </rules>

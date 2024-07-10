@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/xhtml-entities.dtd">
+<topic xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:noNamespaceSchemaLocation="https://resources.jetbrains.com/writerside/1.0/topic.v2.xsd"
+       title="Gestão e Equipe" id="gestao-equipe">
+
+    <chapter id="1">
+        <title>Planejamento e Sprints</title>
+        <chapter id="1.1">
+            <title>Sprints</title>
+            <list>
+                <li>Duração da sprint: Duas semanas.</li>
+                <li>Seguir as cerimônias especificadas: Planejamento da Sprint, Daily Scrum, Revisão da Sprint,
+                    Retrospectiva da Sprint.
+                </li>
+            </list>
+        </chapter>
+        <chapter id="1.2">
+            <title>Backlog do Produto</title>
+            <list>
+                <li>O Product Owner deve manter o backlog do produto priorizado e atualizado.</li>
+                <li>Revisar e refinar regularmente o backlog para garantir que as issues estejam bem definidas e prontas
+                    para serem trabalhadas.
+                </li>
+                <li>Utilizar critérios de aceitação claros para cada item do backlog para facilitar o entendimento e a
+                    implementação pela equipe de desenvolvimento.
+                </li>
+            </list>
+        </chapter>
+    </chapter>
+    <chapter id="2">
+        <title>Papéis e Responsabilidades</title>
+        <chapter id="2.1">
+            <title>Product Owner</title>
+            <list>
+                <li>Garantir que a equipe esteja alinhada com os objetivos do negócio e com a visão do produto.</li>
+                <li>Estar disponível para responder perguntas da equipe e fornecer feedback contínuo.</li>
+                <li>Facilitar todas as cerimônias Scrum (Planejamento de Sprint, Daily Scrum, Revisão de Sprint e Retrospectiva).</li>
+                <li>Remover impedimentos que bloqueiam o progresso da equipe.</li>
+                <li>Priorizar o backlog do produto com base no valor para o negócio e no feedback dos stakeholders.</li>
+                <li>Comunicar claramente a visão, as metas e os critérios de sucesso do produto para a equipe e os stakeholders.</li>
+            </list>
+        </chapter>
+        <chapter id="2.2">
+            <title>Equipe de Desenvolvimento</title>
+            <list>
+                <li>Autogerenciar-se e organizar-se para alcançar as metas do sprint.</li>
+                <li>Colaborar ativamente e comunicar-se abertamente com todos os membros da equipe.</li>
+                <li>Participar ativamente de todas as cerimônias Scrum, contribuindo com insights e feedback.</li>
+                <li>Estimar o esforço necessário para concluir cada tarefa e comprometer-se com um plano de entrega realista.</li>
+                <li>Identificar e comunicar impedimentos imediatamente para que possam ser resolvidos rapidamente.</li>
+                <li>Focar na entrega de incrementos de produto de alta qualidade e prontos para uso ao final de cada sprint.</li>
+            </list>
+        </chapter>
+        <chapter id="2.3">
+            <title>Diretoria</title>
+            <list>
+                <li>Apoiar o Product Owner e a equipe de desenvolvimento na definição das prioridades estratégicas.</li>
+                <li>Participar da Sprint Backlog Meeting para garantir que os itens selecionados estejam alinhados com os objetivos estratégicos da empresa.</li>
+                <li>Prover recursos e suporte necessários para a remoção de impedimentos identificados pelo Product Owner e pela equipe de desenvolvimento.</li>
+                <li>Revisar e aprovar as metas e objetivos do produto, assegurando que estejam alinhados com a visão e as metas da organização.</li>
+                <li>Fornecer feedback contínuo sobre o progresso do produto e participar das revisões da sprint para avaliar o progresso e alinhar as expectativas, se necessário.</li>
+            </list>
+        </chapter>
+    </chapter>
+
+    <chapter id="3">
+        <title>Sprint Backlog Meeting</title>
+        <p>Objetivo: Organizar e priorizar os itens do Product Backlog que serão movidos para o Sprint Backlog, garantindo que estejam alinhados com os objetivos estratégicos da empresa.</p>
+        <p>Participantes: Comitê do produto (diretoria e Product Owner).</p>
+        <p>Duração: 30-60 minutos (dependendo da quantidade de itens a serem discutidos).</p>
+        <p>Frequência: Antes de cada Sprint Planning.</p>
+        <list type="bullet">
+            <li>
+                <p><b>Revisão do Product Backlog:</b> O Product Owner apresenta os itens do Product Backlog que estão priorizados para a próxima sprint. Discutir a prioridade desses itens com a diretoria e o comitê do produto.</p>
+            </li>
+            <li>
+                <p><b>Alinhamento Estratégico:</b> Garantir que os itens selecionados estejam alinhados com os objetivos estratégicos da empresa. Ajustar prioridades, se necessário, com base no feedback da diretoria.</p>
+            </li>
+            <li>
+                <p><b>Seleção de Itens para o Sprint Backlog:</b> Decidir quais itens serão movidos para o Sprint Backlog. Estabelecer metas claras e expectativas para a sprint.</p>
+            </li>
+            <li>
+                <p><b>Discussão de Impedimentos Potenciais:</b> Identificar e discutir qualquer impedimento potencial que possa afetar a entrega dos itens selecionados. Planejar ações para mitigar esses impedimentos.</p>
+            </li>
+            <li>
+                <p><b>Documentação e Comunicação:</b> Documentar as decisões tomadas durante a reunião.</p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter>
+        <title>Sprint Planning</title>
+        <p>Objetivo: Definir o trabalho a ser feito na próxima sprint.</p>
+        <p>Participantes: Todo o time Scrum (Product Owner, Scrum Master e equipe de desenvolvimento).</p>
+        <p>Duração: Até 8 horas para uma sprint de um mês. Proporcionalmente menor para sprints mais curtas.</p>
+        <p>Frequência: No início de cada sprint.</p>
+        <list type="bullet">
+            <li>
+                <p><b>Revisão do Objetivo da Sprint:</b> O Product Owner define o objetivo da sprint com base nas prioridades de negócios. A equipe de desenvolvimento e o Scrum Master entendem o objetivo e a importância dos itens.</p>
+            </li>
+            <li>
+                <p><b>Seleção dos Itens do Product Backlog:</b> A equipe de desenvolvimento seleciona os itens do Product Backlog que podem ser concluídos na sprint. O Product Owner fornece clareza sobre os itens selecionados.</p>
+            </li>
+            <li>
+                <p><b>Criação do Sprint Backlog:</b> A equipe de desenvolvimento decompõe os itens selecionados em tarefas mais detalhadas. A equipe estima o esforço necessário para concluir cada tarefa.</p>
+            </li>
+            <li>
+                <p><b>Definição da Meta da Sprint:</b> A equipe concorda com uma meta clara para a sprint, que representa a soma dos itens selecionados.</p>
+            </li>
+            <li>
+                <p><b>Planejamento das Tarefas:</b> A equipe discute e planeja como realizará o trabalho durante a sprint. A equipe identifica quaisquer dependências ou impedimentos.</p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter>
+        <title>Daily Scrum (Reunião Diária)</title>
+        <p>Objetivo: Sincronizar as atividades da equipe e planejar as próximas 24 horas.</p>
+        <p>Participantes: Todo o time Scrum.</p>
+        <p>Duração: 15 minutos.</p>
+        <p>Frequência: Diariamente.</p>
+        <list type="bullet">
+            <li>
+                <p><b>Atualização de Status:</b> Cada membro da equipe responde a três perguntas: O que fiz ontem que ajudou a equipe a alcançar a meta da sprint? O que farei hoje para ajudar a equipe a alcançar a meta da sprint? Vejo algum impedimento que possa atrapalhar o progresso da equipe?</p>
+            </li>
+            <li>
+                <p><b>Identificação de Impedimentos:</b> Qualquer impedimento identificado é discutido brevemente e, se necessário, tratado fora da reunião diária.</p>
+            </li>
+            <li>
+                <p><b>Ajustes no Plano:</b> A equipe ajusta o plano de trabalho para o próximo dia com base nas informações compartilhadas.</p>
+            </li>
+        </list>
+    </chapter>
+
+    <chapter>
+        <title>Sprint Review (Revisão da Sprint)</title>
+        <p>Objetivo: Inspecionar o incremento e adaptar o Product Backlog, se necessário.</p>
+        <p>Participantes: Todo o time Scrum e stakeholders.</p>
+        <p>Duração: Até 4 horas para uma sprint de um mês. Proporcionalmente menor para sprints mais curtas.</p>
+        <p>Frequência: No final de cada sprint.</p>
+        <list type="bullet">
+            <li>
+                <p><b>Demonstração do Incremento:</b> A equipe de desenvolvimento demonstra o trabalho concluído durante a sprint. Mostrar um incremento potencialmente utilizável e pronto.</p>
+            </li>
+            <li>
+                <p><b>Discussão de Feedback:</b> Stakeholders fornecem feedback sobre o incremento. Discutir o que foi concluído e o que não foi concluído.</p>
+            </li>
+            <li>
+                <p><b>Revisão do Product Backlog:</b> O Product Owner discute o estado atual do Product Backlog. Ajustar prioridades e atualizar o backlog com base no feedback recebido.</p>
+            </li>
+            <li>
+                <p><b>Planejamento de Próximos Passos:</b> Discutir possíveis próximos passos e necessidades para as futuras sprints.</p>
+            </li>
+        </list>
+    </chapter>
+</topic>
